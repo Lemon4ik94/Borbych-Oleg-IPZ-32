@@ -69,7 +69,7 @@ body {
     font-size: 44px;
     font-weight: 900;
     text-transform: uppercase;
-    line-height: 60px;
+    line-height: 1.36;
     letter-spacing: 2.64px;
     word-wrap: break-word;
 }
@@ -78,7 +78,7 @@ body {
     color: var(--background-primary-color);
     font-size: 16px;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 1.87;
     letter-spacing: 0.96px;
     background-color: var(--accent-color);
     cursor: pointer;
@@ -102,8 +102,7 @@ body {
 
 .feature-description {
     color: var(--secondary-color);
-    font-weight: 400;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.42px;
 }
 
@@ -127,7 +126,6 @@ body {
 
 .employee-job {
     color: var(--secondary-color);
-    font-weight: 400;
 }
 
 /* FOOTER */
@@ -146,8 +144,7 @@ body {
 .tel-footer {
     color: var(--background-primary-color);
     font-size: 14px;
-    font-weight: 400;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.42;
     word-wrap: break-word;
 }
@@ -166,7 +163,7 @@ body {
     background-color: var(--inactive-filter-color);
     font-size: 16px;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 1.62;
     letter-spacing: 0.48px;
     cursor: pointer;
     word-wrap: break-word;
@@ -186,7 +183,7 @@ body {
     color: var(--primary-color);
     font-size: 18px;
     font-weight: 700;
-    line-height: 36px;
+    line-height: 2;
     letter-spacing: 1.08px;
     word-wrap: break-word;
 }
@@ -194,8 +191,7 @@ body {
 .project-description {
     color: var(--secondary-color);
     font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
+    line-height: 1.87;
     letter-spacing: 0.48px;
     word-wrap: break-word;
 }
