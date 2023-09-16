@@ -86,7 +86,9 @@ body {
 
 .feature,
 .development-stack-list,
-.team-list {
+.filter-list,
+.team-list,
+.project-list {
     list-style-type: none;
 }
 
@@ -154,4 +156,46 @@ body {
 .tel-footer {
     color: var(--secondary-color);
     text-decoration: none;
+}
+
+/* PORTFOLIO */
+
+.filter,
+.filter-active {
+    color: var(--primary-color);
+    background-color: var(--inactive-filter-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+    cursor: pointer;
+    word-wrap: break-word;
+}
+
+.filter-active {
+    color: var(--background-primary-color);
+    background-color: var(--accent-color);
+
+}
+
+.project {
+    text-decoration: none;
+}
+
+.project-title {
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 1.08px;
+    word-wrap: break-word;
+}
+
+.project-description {
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.48px;
+    word-wrap: break-word;
 }
