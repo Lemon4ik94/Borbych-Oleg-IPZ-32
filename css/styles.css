@@ -43,6 +43,7 @@ body {
 .email,
 .navigation-button,
 .navigation-button-active {
+    transition: color 300ms;
     color: var(--primary-color);
     text-decoration: none;
     font-weight: 500;
@@ -58,6 +59,7 @@ body {
 .email:hover,
 .email:focus,
 .navigation-button:hover,
+.navigation-button:focus,
 .navigation-button-active {
     color: var(--accent-color);
 }
@@ -161,12 +163,13 @@ body {
 .filter {
     color: var(--primary-color);
     background-color: var(--inactive-filter-color);
-    font-family: "Roboto", sans-serif;
+    font-family: inherit;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.62;
     letter-spacing: 0.48px;
     cursor: pointer;
+    transition: color 300ms;
 }
 
 .filter:hover,
