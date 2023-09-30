@@ -4,13 +4,14 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Студія</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
 
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/modern-normalize.css">
+	<title>Студія</title>
 </head>
 
 <body>
@@ -68,37 +69,47 @@
 		<section>
 			<h2 class="development-stack-header">Чим ми займаємось</h2>
 			<ul class="development-stack-list">
-				<li>
-					<img src="./images/img0.jpg" alt="Програмування" width="320" />
+				<li class="development-stack">
+					<img src="./images/img0.jpg" alt="Програмування" width="320" height="216" />
 				</li>
-				<li>
-					<img src="./images/img1.jpg" alt="Мобільна розробка" width="320" />
+				<li class="development-stack">
+					<img src="./images/img1.jpg" alt="Мобільна розробка" width="320" height="216" />
 				</li>
-				<li><img src="./images/img2.jpg" alt="Дизайн" width="320" /></li>
+				<li class="development-stack">
+					<img src="./images/img2.jpg" alt="Дизайн" width="320" height="216" />
+				</li>
 			</ul>
 		</section>
-		<section>
+		<section class="team-section">
 			<h2 class="team-header">Наша команда</h2>
 			<ul class="team-list">
 				<li class="employee">
 					<img src="./images/imgworker0.jpg" alt="Ігор Дем'яненко" width="300" />
-					<h3 class="employee-name">Ігор Дем'яненко</h3>
-					<p class="employee-job">Product Designer</p>
+					<div class="employee-name-job">
+						<h3 class="employee-name">Ігор Дем'яненко</h3>
+						<p class="employee-job">Product Designer</p>
+					</div>
 				</li>
 				<li class="employee">
 					<img src="./images/imgworker1.jpg" alt="Ольга Рєпіна" width="300" />
-					<h3 class="employee-name">Ольга Рєпіна</h3>
-					<p class="employee-job">Frontend Developer</p>
+					<div class="employee-name-job">
+						<h3 class="employee-name">Ольга Рєпіна</h3>
+						<p class="employee-job">Frontend Developer</p>
+					</div>
 				</li>
 				<li class="employee">
 					<img src="./images/imgworker2.jpg" alt="Микола Тарасов" width="300" />
-					<h3 class="employee-name">Микола Тарасов</h3>
-					<p class="employee-job">Marketing</p>
+					<div class="employee-name-job">
+						<h3 class="employee-name">Микола Тарасов</h3>
+						<p class="employee-job">Marketing</p>
+					</div>
 				</li>
 				<li class="employee">
 					<img src="./images/imgworker3.jpg" alt="Михайло Єрмаков" width="300" />
-					<h3 class="employee-name">Михайло Єрмаков</h3>
-					<p class="employee-job">UI Designer</p>
+					<div class="employee-name-job">
+						<h3 class="employee-name">Михайло Єрмаков</h3>
+						<p class="employee-job">UI Designer</p>
+					</div>
 				</li>
 			</ul>
 		</section>

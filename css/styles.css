@@ -13,17 +13,42 @@ body {
     font-style: normal;
     font-size: 14px;
     color: #212121;
+    margin: 0 auto;
+}
+
+h1, h2, h3, p, ul {
+    padding: 0;
+    margin: 0;
 }
 
 /* HEADER */
 
 .header {
+    display: flex;
+    align-items: center;
     background-color: var(--background-primary-color);
 }
 
 .contact-info,
 .navigation-button-list {
     list-style-type: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 24px 93px 24px 215px;
+}
+
+.navigation-button-list {
+    display: flex;
+    gap: 50px;
+    margin-right: 315px;
+}
+
+.contact-info {
+    display: flex;
+    gap: 40px;
 }
 
 .logo,
@@ -66,21 +91,31 @@ body {
 
 /* MAIN */
 
-.hero {
-    background-color: var(--background-secondary-color);
-}
+    .hero {
+        background-color: var(--background-secondary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 94px;
+    }
 
-.hero-header {
-    color: var(--background-primary-color);
-    font-size: 44px;
-    font-weight: 900;
-    text-transform: uppercase;
-    line-height: 1.36;
-    letter-spacing: 2.64px;
-}
+    .hero-header {
+        color: var(--background-primary-color);
+        width: 696px;
+        text-align: center;
+        margin: 200px 452px 30px 452px;
+        font-size: 44px;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 1.36;
+        letter-spacing: 2.64px;
+    }
 
 .hero-button {
     color: var(--background-primary-color);
+    padding: 10px 24px;
+    margin-bottom: 200px;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.87;
@@ -95,6 +130,20 @@ body {
 .team-list,
 .project-list {
     list-style-type: none;
+}
+
+.feature {
+    width: 270px;
+    height: 98px;
+    flex-shrink: 0;
+    margin-right: 30px;
+}
+
+.feature-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 94px;
 }
 
 .feature-title {
@@ -113,18 +162,60 @@ body {
 
 .development-stack-header,
 .team-header {
+    display: flex;
+    justify-content: center;
     color: var(--primary-color);
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
+    margin-bottom: 50px;
+
+}
+
+.development-stack-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 94px;
+}
+
+.development-stack {
+    padding-right: 30px;
+}
+
+.team-header {
+    padding-top: 94px;
+}
+
+.team-section {
+    background-color: var(--inactive-filter-color);
+}
+
+.team-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.employee {
+    margin-right: 30px;
+    margin-bottom: 94px;
+    background-color: var(--background-primary-color);
+}
+
+.employee-name-job {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .employee-name,
 .employee-job {
     color: var(--primary-color);
+    padding-bottom: 10px;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.48px;
+    display: flex;
+    justify-content: center;
 }
 
 .employee-job {
@@ -134,12 +225,24 @@ body {
 /* FOOTER */
 
 .footer {
+    display: flex;
+    flex-direction: column;
     background-color: var(--background-secondary-color);
 }
 
 .footer-logo {
     color: var(--background-primary-color);
+    margin-top: 60px;
+    margin-left: 215px;
+    margin-bottom: 28px;
+}
 
+.contact-info-footer {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    margin-left: 215px;
+    margin-bottom: 60px;
 }
 
 .studio-adress,
