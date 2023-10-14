@@ -44,6 +44,7 @@ h1, h2, h3, p, ul, li {
 
 .header {    
     background-color: var(--background-primary-color);
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header .container {
@@ -117,7 +118,6 @@ h1, h2, h3, p, ul, li {
 .hero {
     background-color: var(--background-secondary-color);
     padding-top: 200px;
-    margin-bottom: 94px;
     padding-bottom: 200px;
 }
 
@@ -154,6 +154,10 @@ h1, h2, h3, p, ul, li {
     cursor: pointer;
 }
 
+.main-content {
+    padding-top: 94px;
+}
+
 .feature,
 .development-stack-list,
 .filter-list,
@@ -166,14 +170,13 @@ h1, h2, h3, p, ul, li {
     width: 270px;
     height: 98px;
     flex-shrink: 0;
-    margin-right: 30px;
 }
 
 .feature-list {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 94px;
+    gap: 30px;
 }
 
 .feature-title {
@@ -193,8 +196,7 @@ h1, h2, h3, p, ul, li {
 
 .development-stack-header,
 .team-header {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     color: var(--primary-color);
     font-size: 36px;
     font-weight: 700;
@@ -206,31 +208,34 @@ h1, h2, h3, p, ul, li {
 .development-stack-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 94px;
+    gap: 30px;
 }
 
-.development-stack {
-    padding-right: 30px;
-}
-
-.team-header {
-    padding-top: 94px;
+.development {
+    padding: 94px 0px;
 }
 
 .team-section {
     background-color: var(--inactive-filter-color);
+    padding: 94px 0px;
 }
 
 .team-list {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 30px;
 }
 
 .employee {
-    margin-right: 30px;
-    margin-bottom: 94px;
     background-color: var(--background-primary-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.employee img {
+    height: 260px;
+    width: 270px;
 }
 
 .employee-name-job {
@@ -261,20 +266,15 @@ h1, h2, h3, p, ul, li {
     padding-bottom: 60px;
 }
 
-.footer .container {
-    display: flex;
-    flex-direction: column;
-}
-
 .footer-logo {
     color: var(--background-primary-color);
-    margin-bottom: 28px;
 }
 
 .contact-info-footer {
+    margin-top: 28px;
     display: flex;
-    gap: 12px;
     flex-direction: column;
+    gap: 12px;
 }
 
 .studio-adress,
@@ -334,12 +334,10 @@ h1, h2, h3, p, ul, li {
 }
 
 .project-list {
-    gap: 30px;
-}
-
-.project-list {
     display: grid;
     grid-template-columns: 370px 370px 370px;
+    justify-content: center;
+    gap: 30px;
 }
 
 .project-list li {
@@ -349,15 +347,15 @@ h1, h2, h3, p, ul, li {
 }
 
 .project img {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     width: 370px;
     height: 294px;
     display: block;
+    
 }
 
-.project-title,
-.project-description {
-    padding: 0px 24px;
+.project-details {
+    padding: 0px 24px 20px 24px;
 }
 
 .project-title {
@@ -373,5 +371,4 @@ h1, h2, h3, p, ul, li {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.48px;
-    padding-bottom: 20px;
 }
