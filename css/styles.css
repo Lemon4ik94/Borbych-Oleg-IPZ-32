@@ -6,24 +6,75 @@
     --accent-color: #2196F3;
     --transperent-color: #FFFFFF99;
     --inactive-filter-color: #F5F4FA;
+    --shadow-color: rgba(0, 0, 0, 0.15);
 }
 
 body {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-size: 14px;
+    font-weight: 400;
     color: #212121;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+button {
+    border: 0px;
+    border-radius: 4px;
+}
+
+button:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
+}
+  
+
+h1, h2, h3, p, ul, li {
+    padding: 0;
+    margin: 0;
 }
 
 /* HEADER */
 
-.header {
+.header {    
     background-color: var(--background-primary-color);
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
 }
 
 .contact-info,
 .navigation-button-list {
     list-style-type: none;
+}
+
+.logo {    
+    margin-right: 93px;
+}
+
+.navigation-button-list {
+    display: flex;
+    gap: 50px;    
+}
+
+.navigation-button {
+    display: inline-block;
+    padding: 32px 0;
+}
+
+.contact-info {
+    margin-left: auto;
+    display: flex;
+    gap: 40px;
 }
 
 .logo,
@@ -39,10 +90,10 @@ body {
 .accent-text-logo {
     color: var(--accent-color)
 }
+
 .tel,
 .email,
-.navigation-button,
-.navigation-button-active {
+.navigation-button {
     transition: color 300ms;
     color: var(--primary-color);
     text-decoration: none;
@@ -54,10 +105,8 @@ body {
     color: var(--secondary-color)
 }
 
-.tel:hover,
-.tel:focus,
-.email:hover,
-.email:focus,
+.contact-info a:hover,
+.contact-info a:focus,
 .navigation-button:hover,
 .navigation-button:focus,
 .navigation-button-active {
@@ -68,10 +117,22 @@ body {
 
 .hero {
     background-color: var(--background-secondary-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .hero-header {
     color: var(--background-primary-color);
+    width: 696px;
+    text-align: center;
+    margin-bottom: 40px;
     font-size: 44px;
     font-weight: 900;
     text-transform: uppercase;
@@ -81,12 +142,20 @@ body {
 
 .hero-button {
     color: var(--background-primary-color);
+    padding: 10px 24px;
+    margin: auto;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.87;
     letter-spacing: 0.96px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px var(--shadow-color);
     background-color: var(--accent-color);
     cursor: pointer;
+}
+
+.main-content {
+    padding-top: 94px;
 }
 
 .feature,
@@ -97,12 +166,26 @@ body {
     list-style-type: none;
 }
 
+.feature {
+    width: 270px;
+    height: 98px;
+    flex-shrink: 0;
+}
+
+.feature-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
 .feature-title {
     color: var(--primary-color);
     font-weight: 700;
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 0.42px;
+    padding-bottom: 10px;
 }
 
 .feature-description {
@@ -113,18 +196,62 @@ body {
 
 .development-stack-header,
 .team-header {
+    text-align: center;
     color: var(--primary-color);
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
+    margin-bottom: 50px;
+
+}
+
+.development-stack-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.development {
+    padding: 94px 0px;
+}
+
+.team-section {
+    background-color: var(--inactive-filter-color);
+    padding: 94px 0px;
+}
+
+.team-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.employee {
+    background-color: var(--background-primary-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.employee img {
+    height: 260px;
+    width: 270px;
+}
+
+.employee-name-job {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .employee-name,
 .employee-job {
     color: var(--primary-color);
+    padding-bottom: 10px;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.48px;
+    display: flex;
+    justify-content: center;
 }
 
 .employee-job {
@@ -135,17 +262,25 @@ body {
 
 .footer {
     background-color: var(--background-secondary-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo {
     color: var(--background-primary-color);
+}
 
+.contact-info-footer {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .studio-adress,
 .email-footer,
 .tel-footer {
-    color: var(--transperent-color);
+    color: var(--background-primary-color);
     font-style: normal;
     font-size: 14px;
     line-height: 1.14;
@@ -154,11 +289,23 @@ body {
 
 .email-footer,
 .tel-footer {
-    color: var(--secondary-color);
+    color: var(--transperent-color);
     text-decoration: none;
 }
 
 /* PORTFOLIO */
+
+.project-area-container {
+    padding: 94px 0px;
+}
+
+.filter-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
 
 .filter {
     color: var(--primary-color);
@@ -170,17 +317,45 @@ body {
     letter-spacing: 0.48px;
     cursor: pointer;
     transition: color 300ms;
+    padding: 6px 22px;
+    gap: 30px;
 }
 
 .filter:hover,
 .filter:focus {
     color: var(--background-primary-color);
     background-color: var(--accent-color);
-
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .project {
     text-decoration: none;
+    
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project-list li {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #EEE;
+}
+
+.project img {
+    margin-bottom: 30px;
+    width: 370px;
+    height: 294px;
+    display: block;
+    
+}
+
+.project-details {
+    padding: 0px 24px 20px 24px;
 }
 
 .project-title {
