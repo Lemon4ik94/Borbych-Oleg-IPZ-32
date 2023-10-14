@@ -295,10 +295,6 @@ h1, h2, h3, p, ul, li {
 
 /* PORTFOLIO */
 
-.project-area-container {
-    padding: 94px 0px;
-}
-
 .filter-list {
     display: flex;
     flex-direction: row;
@@ -329,13 +325,16 @@ h1, h2, h3, p, ul, li {
 }
 
 .project {
-    text-decoration: none;
-    
+    text-decoration: none;   
+}
+
+.project-area {
+    padding: 94px 0px 94px 0px;
 }
 
 .project-list {
     display: grid;
-    grid-template-columns: 370px 370px 370px;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     gap: 30px;
 }
@@ -348,8 +347,6 @@ h1, h2, h3, p, ul, li {
 
 .project img {
     margin-bottom: 30px;
-    width: 370px;
-    height: 294px;
     display: block;
     
 }
