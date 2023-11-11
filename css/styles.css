@@ -177,7 +177,9 @@ li {
 .filter-list,
 .team-list,
 .project-list,
-.customers-list {
+.social-links-list,
+.customers-list,
+.social-links-footer-list {
     list-style-type: none;
 }
 
@@ -264,14 +266,16 @@ li {
 }
 
 .employee-name-job {
-    margin-top: 30px;
-    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 16px;
+    align-items: center;
 }
 
 .employee-name,
 .employee-job {
     color: var(--primary-color);
-    padding-bottom: 10px;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.48px;
@@ -279,14 +283,17 @@ li {
     justify-content: center;
 }
 
-.employee-job {
-    color: var(--secondary-color);
+.employee-name {
+    margin-bottom: 10px;
 }
 
-.social-links {
+.employee-job {
+    color: var(--secondary-color);
+    margin-bottom: 16px;
+}
+
+.social-links-list {
     display: flex;
-    margin-left: 32px;
-    margin-bottom: 30px;
     gap: 10px;
 }
 
@@ -352,7 +359,7 @@ li {
     margin-left: 94px;
 }
 
-.social-links-footer {
+.social-links-footer-list {
     display: flex;
     gap: 10px;
 }
@@ -386,10 +393,12 @@ li {
     text-transform: uppercase;
     margin-bottom: 30px;
 }
-
-.regular-customers div {
+.regular-customers {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.regular-customers>div {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -432,7 +441,6 @@ li {
 }
 
 .customer:hover {
-    cursor: pointer;
     transition: 300ms;
     border-color: var(--accent-color);
 }
