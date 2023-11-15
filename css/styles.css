@@ -269,7 +269,7 @@ li {
     display: flex;
     flex-direction: column;
     padding-top: 30px;
-    padding-bottom: 16px;
+    padding-bottom: 30px;
     align-items: center;
 }
 
@@ -352,7 +352,7 @@ li {
 
 .footer>div {
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 
 .join-us {
