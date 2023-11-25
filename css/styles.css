@@ -512,6 +512,7 @@ li {
 }
 
 .modal-window {
+    padding: 40px;
     position: absolute;
     min-width: 528px;
     min-height: 581px;
@@ -682,7 +683,7 @@ li {
     width: 358px;
     height: 50px;
     margin-right: 12px;
-    padding: 10px 15px;  
+    padding: 10px 15px;
 }
 
 .subscribe__button {
@@ -698,7 +699,8 @@ li {
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 30px; /* 187.5% */
+    line-height: 30px;
+    /* 187.5% */
     letter-spacing: 0.96px;
 }
 
@@ -710,4 +712,176 @@ li {
 
 .subscribe__icon {
     color: var(--background-primary-color);
+}
+
+.modal-window__title {
+    color: var(--primary-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    margin-bottom: 12px;
+}
+
+.feedback-form__list {
+}
+
+.list__item--feedback {}
+
+.item__label--feedback {
+    color: var(--secondary-color);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.item__container--feedback {
+    position: relative;
+    border: none;
+}
+
+.item__field--feedback,
+.item__comment-field--feedback {
+    height: 40px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+    padding-left: 42px;
+    margin-bottom: 10px;
+    transition: 300ms;
+}
+
+
+.item__field--feedback:focus,
+.item__field--feedback:hover,
+.item__comment-field--feedback:focus,
+.item__comment-field--feedback:hover {
+    border: 1px solid var(--accent-color);
+    outline: none;
+}
+
+.item__field--feedback:hover+.item__icon--feedback,
+.item__field--feedback:focus+.item__icon--feedback {
+    color: var(--accent-color);
+}
+
+.item__comment-field--feedback {
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    height: 120px;
+    display: flex;
+    align-items: start;
+    resize: none;
+}
+
+.item__icon--feedback {
+    color: var(--primary-color);
+    position: absolute;
+    top: 11px;
+    left: 12px;
+    transition: 300ms;
+}
+
+.feedback-form__agreement {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-left: 12px;
+}
+
+.agreement__checkbox--feedback {
+    margin-right: 8px;
+    color: var(--primary-color);
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    border: var(--secondary-color) 1px solid;
+    background-color: var(--background-primary-color);
+    height: 15px;
+    width: 16px;
+    border-radius: 2px;
+    position: relative;
+}
+
+input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: var(--accent-color);
+    transform: translate(4px, 10px) rotate(-45deg);
+    transform-origin: left;
+    transition: 150ms all linear;
+    transition-delay: 0ms;
+}
+
+input[type="checkbox"]::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    background-color: var(--accent-color);
+    transform: translate(0px, 5px) rotate(45deg);
+    transform-origin: left;
+    transition: 150ms all linear;
+    transition-delay: 150ms;
+}
+
+input[type="checkbox"]:checked::before {
+    width: 14px;
+    transition-delay: 150ms;
+}
+
+input[type="checkbox"]:checked::after {
+    width: 8px;
+    transition-delay: 0ms;
+}
+  
+
+.agreement__text--feedback {
+    color: var(--secondary-color);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+}
+
+.agreement__hyperlink {
+    color: var(--accent-color);
+    text-decoration-line: underline;
+}
+
+.feedback-form__button {
+    border-radius: 4px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 10px 52px;
+    display: block;
+    margin: 0 auto;
+
+    color: var(--background-primary-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 0.96px;
+}
+
+.feedback-form__button:hover {
+    cursor: pointer;
+    background: #188CE8;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
