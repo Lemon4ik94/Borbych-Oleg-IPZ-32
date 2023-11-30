@@ -727,6 +727,7 @@ li {
 }
 
 .feedback-form__list {
+    margin-bottom: 20px;
 }
 
 .list__item--feedback {}
@@ -774,7 +775,6 @@ li {
 }
 
 .item__comment-field--feedback {
-    margin-bottom: 20px;
     padding: 12px 16px;
     height: 120px;
     display: flex;
