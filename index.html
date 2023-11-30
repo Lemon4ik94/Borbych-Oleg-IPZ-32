@@ -424,19 +424,76 @@
 					</li>
 				</ul>
 			</div>
-			</li>
-			</ul>
+			<div class="footer__subscribe">
+				<h3 class="subscribe__title">підпишіться на розсилку</h3>
+				<form name="subscribe__form">
+					<input class="subscribe__field" type="text" name="email" placeholder="E-mail">
+					<button class="subscribe__button" type="submit">
+						<div class="button__container">
+							Підписатися
+							<svg class="subscribe__icon" width="24" height="24">
+								<use href="images/icons.svg#icon-send"></use>
+							</svg>
+						</div>
+
+					</button>
+				</form>
+			</div>
 		</div>
 		</div>
 	</footer>
 
 	<div class="backdrop is-hidden" data-modal>
 		<div class="modal-window">
-			<button class="close-window" type="button" data-modal-close>
+			<button class="close-window" type="submit" data-modal-close>
 				<svg class="icon-close-window" width="30px" height="30px">
 					<use xlink:href="./images/icons.svg#icon-close"></use>
 				</svg>
 			</button>
+			<h2 class="modal-window__title">Залиште свої дані, ми вам передзвонимо</h2>
+			<form name="feedback-form" autocomplete="on" novalidate>
+				<ul class="feedback-form__list">
+					<li class="list__item--feedback">
+						<label class="item__label--feedback" for="name">Ім'я</label>
+						<div class="item__container--feedback">
+							<input class="item__field--feedback" type="text" name="feedback_name" id="name">
+							<svg class="item__icon--feedback" width="18" height="18">
+								<use href="images/icons.svg#icon-person-black"></use>
+							</svg>
+						</div>
+					</li>
+					<li class="list__item--feedback">
+						<label class="item__label--feedback" for="phone">Телефон</label>
+						<div class="item__container--feedback">
+							<input class="item__field--feedback" type="text" name="feedback_phone" id="phone">
+							<svg class="item__icon--feedback" width="18" height="18">
+								<use href="images/icons.svg#icon-phone-black"></use>
+							</svg>
+						</div>
+					</li>
+					<li class="list__item--feedback">
+						<label class="item__label--feedback" for="email">Пошта</label>
+						<div class="item__container--feedback">
+							<input class="item__field--feedback" type="text" name="feedback_email" id="email">
+							<svg class="item__icon--feedback" width="18" height="18">
+								<use href="images/icons.svg#icon-email-black"></use>
+							</svg>
+						</div>
+					</li>
+					<li class="list__item--feedback">
+						<label class="item__label--feedback" for="comment">Коментар</label>
+						<div class="item__container--feedback">
+							<textarea class="item__comment-field--feedback" rows="5" name="feedback_comment" id="comment" placeholder="Введіть текст"></textarea>
+						</div>
+					</li>
+				</ul>
+				<div class="feedback-form__agreement">
+					<input class="agreement__checkbox--feedback" type="checkbox" name="agreement" value="agreement" id="agreement">
+					<label class="agreement__text--feedback" for="agreement">Погоджуюся з розсилкою та приймаю <a class="agreement__hyperlink"
+						href="https://www.privacypolicygenerator.info/">Умови договору</a></span>
+				</div>
+				<button class="feedback-form__button" type="submit">Відправити</button>
+			</form>
 		</div>
 	</div>
 
