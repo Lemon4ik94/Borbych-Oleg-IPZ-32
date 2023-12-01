@@ -1,0 +1,41 @@
+@import '../../utils/variables';
+
+.development {
+    padding: 0 0 94px 0;
+}
+
+.development__title {
+    text-align: center;
+    color: getColor(primary-color);
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+
+.development__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.development-list__item {
+    position: relative;
+}
+
+.development-list__text {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    color: getColor(background-primary-color);
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    bottom: 0px;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background: rgba(47, 48, 58, 0.8);
+}

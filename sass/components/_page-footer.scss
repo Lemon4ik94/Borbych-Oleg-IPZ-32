@@ -1,0 +1,144 @@
+@import '../utils/variables';
+
+.footer {
+    background-color: getColor(background-secondary-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.cotacts__logo {
+    color: getColor(background-primary-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+}
+
+.contacts__logo--accent {
+    color: getColor(accent-color);
+}
+
+.contacts__info {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contacts__adress,
+.contacts__details {
+    color: getColor(background-primary-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.42;
+}
+
+.contacts__details {
+    color: getColor(transperent-color);
+    text-decoration: none;
+}
+
+.footer>div {
+    display: flex;
+    align-items: baseline;
+}
+
+.join-us {
+    margin-left: 94px;
+}
+
+.join-us__socials-list {
+    display: flex;
+    gap: 10px;
+}
+
+.socials-list__icon {
+    &:hover circle {
+        transition: 300ms;
+        fill: getColor(accent-color);
+    }
+
+    circle {
+        fill: rgba(255, 255, 255, 0.1);
+    }
+
+    use {
+        color: getColor(background-primary-color);
+    }
+
+    &:hover use {
+        transition: 300ms;
+        color: getColor(background-primary-color);
+    }
+}
+
+.join-us__title {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.footer__subscribe {
+    margin-left: 94px;
+}
+
+.subscribe__title {
+    color: getColor(background-primary-color);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.subscribe__field {
+    color: getColor(background-primary-color);
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(33, 150, 243, 0);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding: 10px 15px;
+}
+
+.subscribe__button {
+    border-radius: 4px;
+    background: getColor(accent-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 10px 28px;
+    cursor: pointer;
+    color: getColor(background-primary-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+
+    /* 187.5% */
+    letter-spacing: 0.96px;
+}
+
+.subscribe__button-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subscribe__icon {
+    color: getColor(background-primary-color);
+}

@@ -1,0 +1,15 @@
+$colors: (
+    'primary-color': #212121,
+    'secondary-color': #757575,
+    'background-primary-color': #FFFFFF,
+    'background-secondary-color': #2F303A,
+    'accent-color': #2196F3,
+    'transperent-color': #FFFFFF99,
+    'inactive-filter-color': #F5F4FA,
+    'shadow-color': rgba(0, 0, 0, 0.15),
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
+  
