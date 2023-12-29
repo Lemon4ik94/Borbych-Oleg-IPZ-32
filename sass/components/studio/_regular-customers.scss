@@ -38,6 +38,11 @@
   display: flex;
   gap: 30px;
 
+  @include tablet {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   @include mobile {
     flex-wrap: wrap;
   }
@@ -51,6 +56,10 @@
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+
+  @include tablet {
+    width: 226px;
+  }
 
   @include mobile {
     width: 209px;

@@ -41,7 +41,34 @@
 						</svg>+38 096 111 11 11</a>
 				</li>
 			</ul>
+			<button class="button-mobile header__button-mobile" type="button" open-mobile-menu>
+				<svg class="button-mobile__icon" width="24" height="24">
+					<use href="./images/icons.svg#icon-mobile-menu"></use>
+				</svg>
+			</button>
 		</div>
+		<div class="mobile-menu is-hidden--mobile" mobile-menu>
+			<nav class="mob-nav mobile-menu__mob-nav">
+				<ul class="mob-nav__list">
+					<li class="mob-nav__item"><a href="index.html" class="mob-nav__link">Студія</a></li>
+					<li class="mob-nav__item"><a href="portfolio.html" class="mob-nav__link">Портфоліо</a></li>
+					<li class="mob-nav__item"><a href="#" class="mob-nav__link">Контакти</a></li>
+				</ul>
+			</nav>
+			<a href="tel:+380961111111" class="mobile-menu__phone">+38 096 111 11 11</a>
+			<a href="mailto:info@devstudio.com" class="mobile-menu__email">info@devstudio.com</a>
+			<ul class="mobile-socials-list mobile-menu__mobile-socials-list">
+				<li class="mobile-socials-list__item"><a href="www.instagram.com" class="mobile-socials-list__link">Instagram</a></li>
+				<li class="mobile-socials-list__item"><a href="www.twitter.com" class="mobile-socials-list__link">Twitter</a></li>
+				<li class="mobile-socials-list__item"><a href="www.facebook.com" class="mobile-socials-list__link">Facebook</a></li>
+				<li class="mobile-socials-list__item"><a href="www.linkedin.com" class="mobile-socials-list__link">LinkedIn</a></li>
+			</ul>
+            <button class="close-button mobile-menu__close-button" type="button" close-mobile-menu>
+                <svg class="close-button__icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-close-mobile"></use>
+                </svg>
+            </button>
+        </div>
 	</header>
 
     <main>
@@ -279,7 +306,7 @@
 		</div>
 		</div>
 	</footer>
-
+    <script src="./js/mobile.js"></script>
 </body>
 
 </html>

@@ -46,6 +46,11 @@
   display: flex;
   gap: 40px;
 
+  @include tablet {
+    flex-direction: column;
+    gap: 10px;
+  }
+
   @include mobile {
     display: none;
   }
