@@ -2,11 +2,20 @@
 
 .feature {
     padding-top: 94px;
+
+    @include mobile {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 .feature-list__item {
     width: 270px;
     flex-shrink: 0;
+
+    @include mobile {
+        width: 100%;
+    }
 }
 
 .feature__box {
@@ -18,12 +27,20 @@
     margin-bottom: 30px;
     border-radius: 4px;
     background: #F5F4FA;
+    
+    @include mobile {
+        width: 450px;
+    }
 }
 
 .feature__feature-list {
     display: flex;
     justify-content: center;
     gap: 30px;
+
+    @include mobile {
+        flex-wrap: wrap;
+    }
 }
 
 .feature__title {
@@ -33,6 +50,10 @@
     font-size: 14px;
     letter-spacing: 0.42px;
     padding-bottom: 10px;
+
+    @include mobile {
+        text-align: center;
+    }
 }
 
 .feature__description {

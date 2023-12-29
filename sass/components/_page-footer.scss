@@ -6,6 +6,14 @@
     padding-bottom: 60px;
 }
 
+.contacts {
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .cotacts__logo {
     color: getColor(background-primary-color);
     font-family: Raleway;
@@ -25,11 +33,16 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+
+    @include mobile {
+        margin-bottom: 60px;
+    }
 }
 
 .contacts__adress,
 .contacts__details {
     color: getColor(background-primary-color);
+    text-align: center;
     font-style: normal;
     font-size: 14px;
     line-height: 1.14;
@@ -44,15 +57,32 @@
 .footer>div {
     display: flex;
     align-items: baseline;
+
+    @include mobile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .join-us {
     margin-left: 94px;
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
 }
 
 .join-us__socials-list {
     display: flex;
     gap: 10px;
+
+    @include mobile {
+        margin-bottom: 60px;
+    }
 }
 
 .socials-list__icon--footer {
@@ -85,10 +115,29 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 30px;
+
+    @include mobile {
+        margin-bottom: 20px;
+    }
 }
 
 .footer__subscribe {
     margin-left: 94px;
+
+    @include mobile {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }
 
 .subscribe__title {
@@ -113,6 +162,10 @@
     height: 50px;
     margin-right: 12px;
     padding: 10px 15px;
+
+    @include mobile {
+        margin-bottom: 20px;
+    }
 }
 
 .subscribe__button {

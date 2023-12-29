@@ -3,11 +3,19 @@
 .header {
   background-color: getColor(background-primary-color);
   border-bottom: 1px solid #ECECEC;
+
+  @include mobile {
+    padding: 16px 0;
+  }
 }
 
 .header__container {
   display: flex;
   align-items: center;
+
+  @include mobile {
+    max-width: 480px;
+  }
 }
 
 .header__contact,
@@ -22,6 +30,10 @@
 .nav-list {
   display: flex;
   gap: 50px;
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .nav-list__item {
@@ -33,6 +45,10 @@
   margin-left: auto;
   display: flex;
   gap: 40px;
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .header__logo,
@@ -101,4 +117,19 @@
 
 .nav-list__item--active {
   color: getColor(accent-color);
+}
+
+.button-mobile {
+  background-color: #fff;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
 }
