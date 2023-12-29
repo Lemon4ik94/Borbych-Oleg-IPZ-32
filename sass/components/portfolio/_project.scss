@@ -1,0 +1,111 @@
+@import '../../utils/variables';
+
+.filter-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+
+.filter-list__button {
+    color: getColor(primary-color);
+    background-color: getColor(inactive-filter-color);
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.48px;
+    cursor: pointer;
+    transition: 300ms;
+    padding: 6px 22px;
+    gap: 30px;
+
+    &:hover,
+    &:focus {
+        color: getColor(background-primary-color);
+        background-color: getColor(accent-color);
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.project-list__item {
+    text-decoration: none;
+}
+
+.project-list__image-hidden-text {
+    position: relative;
+    overflow: hidden;
+}
+
+.hidden-project-section {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateY(101%);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    opacity: 0.9;
+    transition-property: transform;
+    background-color: getColor(accent-color);
+}
+
+.hidden-project-section__text {
+    color: getColor(background-primary-color);
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.54px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.project-list__item:hover .hidden-project-section {
+    transform: translateY(0);
+}
+
+.project {
+    padding: 94px 0px 94px 0px;
+}
+
+.project__projects-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 30px;
+}
+
+.project-list__item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #EEE;
+
+    &:hover {
+        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.project-list__item img {
+    display: block;
+}
+
+.project-list__details {
+    padding: 30px 24px 20px 24px;
+}
+
+.project-list__title {
+    color: getColor(primary-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 1.08px;
+}
+
+.project-list__description {
+    color: getColor(secondary-color);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.48px;
+}

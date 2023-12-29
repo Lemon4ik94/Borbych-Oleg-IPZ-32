@@ -730,8 +730,6 @@ li {
     margin-bottom: 20px;
 }
 
-.list__item--feedback {}
-
 .item__label--feedback {
     color: var(--secondary-color);
     font-family: Roboto;
