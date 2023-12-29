@@ -28,6 +28,10 @@
         padding-top: 60px;
         padding-bottom: 60px;
     }
+    @include tablet {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 .team-list {
@@ -39,12 +43,20 @@
     @include mobile {
         flex-wrap: wrap;
     }
+    @include tablet {
+        flex-wrap: wrap;
+    }
 }
 
 .team-list__item {
     background-color: getColor(background-primary-color);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    @include tablet {
+        width: 354px;
+        height: 536px;
+    }
 
     img {
         height: 260px;
@@ -54,6 +66,12 @@
             width: 450px;
             height: 460px;
         }
+        
+        @include tablet {
+            width: 354px;
+            height: 374px;
+        }
+        
     }
 
     @include mobile {

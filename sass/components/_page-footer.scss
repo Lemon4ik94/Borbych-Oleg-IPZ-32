@@ -58,6 +58,11 @@
     display: flex;
     align-items: baseline;
 
+    @include tablet {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     @include mobile {
         flex-direction: column;
         justify-content: center;
@@ -124,6 +129,14 @@
 .footer__subscribe {
     margin-left: 94px;
 
+    @include tablet {
+        padding-top: 60px;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     @include mobile {
         margin-left: 0;
         display: flex;
@@ -132,6 +145,13 @@
     }
 
     form {
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         @include mobile {
             display: flex;
             flex-direction: column;
@@ -162,6 +182,11 @@
     height: 50px;
     margin-right: 12px;
     padding: 10px 15px;
+
+    @include tablet {
+        width: 450px;
+        margin-bottom: 20px;
+    }
 
     @include mobile {
         margin-bottom: 20px;

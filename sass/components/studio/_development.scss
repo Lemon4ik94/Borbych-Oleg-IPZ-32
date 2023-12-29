@@ -6,6 +6,9 @@
     @include mobile {
         display: none;
     }
+    @include tablet {
+        display: none;
+    }
 }
 
 .development__title {

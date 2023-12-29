@@ -6,6 +6,11 @@
     justify-content: center;
     gap: 8px;
     margin-bottom: 50px;
+
+    @include mobile {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
 }
 
 .filter-list__button {
@@ -31,6 +36,17 @@
 
 .project-list__item {
     text-decoration: none;
+}
+
+.project-list__image-hidden-text img {
+
+    @include tablet {
+        width: 100%;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
 }
 
 .project-list__image-hidden-text {
@@ -68,6 +84,10 @@
 
 .project {
     padding: 94px 0px 94px 0px;
+
+    @include mobile {
+        padding: 60px 0;
+    }
 }
 
 .project__projects-list {
@@ -75,6 +95,14 @@
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     gap: 30px;
+    
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+        grid-template-columns: 1fr;
+    }
 }
 
 .project-list__item {
