@@ -20,7 +20,7 @@
     color: getColor(accent-color);
 }
 
-.contacts__info {
+.contacts__info--footer {
     margin-top: 28px;
     display: flex;
     flex-direction: column;
@@ -55,7 +55,7 @@
     gap: 10px;
 }
 
-.socials-list__icon {
+.socials-list__icon--footer {
     &:hover circle {
         transition: 300ms;
         fill: getColor(accent-color);
